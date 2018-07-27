@@ -44,5 +44,5 @@ s.framework = "UIKit"
 s.source_files = "LcLib/**/*.{swift}"
 
 # 9
-s.resources = "LcLib/**/*.*"
+s.resources = ""
 end
