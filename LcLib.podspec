@@ -1,5 +1,10 @@
 Pod::Spec.new do |s|
 
+#https://www.raywenderlich.com/99386/create-cocoapod-swift
+#pod spec create LcLib
+#pod repo add LcLib https://github.com/lucianocalderano/LcLib.git
+#pod repo push LcLib LcLib.podspec
+
 # 1
 s.platform = :ios
 s.ios.deployment_target = '9.0'
@@ -12,18 +17,21 @@ s.swift_version = "4.0"
 s.version = "0.0.1"
 
 # 3
-s.license = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+s.license = { :type => 'LcLib License, Version 0.0.1', :text => <<-LICENSE
+Licensed LcLib free Version 0.0.1 (by Lc)
 
-http://www.apache.org/licenses/LICENSE-2.0
+#pod spec create LcLib
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+#git init
+#git add .
+#git commit -m "Initial commit"
+#git tag 0.0.1
+#git remote add origin https://github.com/lucianocalderano/LcLib.git
+#git push -u origin master --tags
+
+#pod repo add LcLib https://github.com/lucianocalderano/LcLib.git
+#pod repo push LcLib LcLib.podspec
+
 LICENSE
 }
 
