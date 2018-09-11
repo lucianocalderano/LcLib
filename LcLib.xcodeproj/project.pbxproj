@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0C1C3B2147A79B000F5413 /* LcLib.pod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C1C3A2147A79B000F5413 /* LcLib.pod.txt */; };
+		8B0C1C3D2147A80C000F5413 /* LcLib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C1C3C2147A80C000F5413 /* LcLib.podspec */; };
 		8B7DE05D210B670700EC4436 /* LcLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7DE05B210B670700EC4436 /* LcLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B7DE06A210B672900EC4436 /* MYExt.Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DE065210B672900EC4436 /* MYExt.Date.swift */; };
 		8B7DE06B210B672900EC4436 /* MYExt.Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DE066210B672900EC4436 /* MYExt.Dictionary.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0C1C3A2147A79B000F5413 /* LcLib.pod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LcLib.pod.txt; sourceTree = "<group>"; };
+		8B0C1C3C2147A80C000F5413 /* LcLib.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LcLib.podspec; sourceTree = "<group>"; };
 		8B7DE058210B670700EC4436 /* LcLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LcLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7DE05B210B670700EC4436 /* LcLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LcLib.h; sourceTree = "<group>"; };
 		8B7DE05C210B670700EC4436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		8B7DE04E210B670700EC4436 = {
 			isa = PBXGroup;
 			children = (
+				8B0C1C3A2147A79B000F5413 /* LcLib.pod.txt */,
+				8B0C1C3C2147A80C000F5413 /* LcLib.podspec */,
 				8B7DE063210B672900EC4436 /* Cls */,
 				8B7DE05A210B670700EC4436 /* LcLib */,
 				8B7DE059210B670700EC4436 /* Products */,
@@ -157,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B0C1C3B2147A79B000F5413 /* LcLib.pod.txt in Resources */,
+				8B0C1C3D2147A80C000F5413 /* LcLib.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

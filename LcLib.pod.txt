@@ -1,0 +1,21 @@
+
+#https://www.raywenderlich.com/99386/create-cocoapod-swift
+
+--- primo pusch
+
+#git init
+#git add .
+#git commit -m "Initial commit"
+#git remote add origin https://github.com/lucianocalderano/LcLib.git
+
+---
+
+#git add .
+#git tag 1.0.1
+#git push -u origin master --tags
+
+---
+
+#pod spec create LcLib
+#pod repo add LcLib https://github.com/lucianocalderano/LcLib.git
+#pod repo push LcLib LcLib.podspec

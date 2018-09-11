@@ -1,10 +1,5 @@
 Pod::Spec.new do |s|
 
-#https://www.raywenderlich.com/99386/create-cocoapod-swift
-#pod spec create LcLib
-#pod repo add LcLib https://github.com/lucianocalderano/LcLib.git
-#pod repo push LcLib LcLib.podspec
-
 # 1
 s.platform = :ios
 s.ios.deployment_target = '9.0'
@@ -14,18 +9,18 @@ s.requires_arc = true
 s.swift_version = "4.0"
 
 # 2
-s.version = "0.0.1"
+s.version = "1.0.1"
 
 # 3
-s.license = { :type => 'LcLib License, Version 0.0.1', :text => <<-LICENSE
-Licensed LcLib free Version 0.0.1 (by Lc)
+s.license = { :type => 'LcLib License, Version 1.0.1', :text => <<-LICENSE
+Licensed LcLib free Version 1.0.1 (by Lc)
 
 #pod spec create LcLib
 
 #git init
 #git add .
 #git commit -m "Initial commit"
-#git tag 0.0.1
+#git tag 1.0.1
 #git remote add origin https://github.com/lucianocalderano/LcLib.git
 #git push -u origin master --tags
 
@@ -52,5 +47,5 @@ s.framework = "UIKit"
 s.source_files = "LcLib/**/*.{swift}"
 
 # 9
-s.resources = ""
+#s.resources = ""
 end
