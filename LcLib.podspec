@@ -9,11 +9,11 @@ s.requires_arc = true
 s.swift_version = "4.0"
 
 # 2
-s.version = "1.0.1"
+s.version = "1.0.2"
 
 # 3
-s.license = { :type => 'LcLib License, Version 1.0.1', :text => <<-LICENSE
-Licensed LcLib free Version 1.0.1 (by Lc)
+s.license = { :type => 'LcLib License #{s.version}', :text => <<-LICENSE
+Licensed LcLib free #{s.version} (by Lc)
 
 #pod spec create LcLib
 
