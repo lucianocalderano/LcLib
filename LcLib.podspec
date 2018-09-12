@@ -15,18 +15,6 @@ s.version = "1.0.2"
 s.license = { :type => 'LcLib License #{s.version}', :text => <<-LICENSE
 Licensed LcLib free #{s.version} (by Lc)
 
-#pod spec create LcLib
-
-#git init
-#git add .
-#git commit -m "Initial commit"
-#git tag 1.0.1
-#git remote add origin https://github.com/lucianocalderano/LcLib.git
-#git push -u origin master --tags
-
-#pod repo add LcLib https://github.com/lucianocalderano/LcLib.git
-#pod repo push LcLib LcLib.podspec
-
 LICENSE
 }
 
