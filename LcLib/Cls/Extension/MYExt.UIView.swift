@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     class func InstanceView (xibName: String? = nil) -> UIView? {
         let viewName = xibName ?? String (describing: self)
         if let array = Bundle.main.loadNibNamed(viewName, owner: self, options: nil) {
