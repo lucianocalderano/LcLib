@@ -2,14 +2,14 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '11.0'
 s.name = "LcLib"
 s.summary = "LcLib - Utilità standard."
 s.requires_arc = true
 s.swift_version = "4.0"
 
 # 2
-s.version = "1.0.2"
+s.version = "1.0.3"
 
 # 3
 s.license = { :type => 'LcLib License #{s.version}', :text => <<-LICENSE
