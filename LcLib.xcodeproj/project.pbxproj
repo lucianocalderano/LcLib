@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B0C1C3B2147A79B000F5413 /* LcLib.pod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C1C3A2147A79B000F5413 /* LcLib.pod.txt */; };
 		8B0C1C3D2147A80C000F5413 /* LcLib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C1C3C2147A80C000F5413 /* LcLib.podspec */; };
+		8B1BDF68214BE3EB0098E9EB /* MYExt.UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BDF67214BE3EB0098E9EB /* MYExt.UIView.swift */; };
 		8B7DE05D210B670700EC4436 /* LcLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7DE05B210B670700EC4436 /* LcLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B7DE06A210B672900EC4436 /* MYExt.Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DE065210B672900EC4436 /* MYExt.Date.swift */; };
 		8B7DE06B210B672900EC4436 /* MYExt.Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DE066210B672900EC4436 /* MYExt.Dictionary.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		8B0C1C3A2147A79B000F5413 /* LcLib.pod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LcLib.pod.txt; sourceTree = "<group>"; };
 		8B0C1C3C2147A80C000F5413 /* LcLib.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LcLib.podspec; sourceTree = "<group>"; };
+		8B1BDF67214BE3EB0098E9EB /* MYExt.UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYExt.UIView.swift; sourceTree = "<group>"; };
 		8B7DE058210B670700EC4436 /* LcLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LcLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7DE05B210B670700EC4436 /* LcLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LcLib.h; sourceTree = "<group>"; };
 		8B7DE05C210B670700EC4436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		8B7DE064210B672900EC4436 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8B1BDF67214BE3EB0098E9EB /* MYExt.UIView.swift */,
 				8B7DE065210B672900EC4436 /* MYExt.Date.swift */,
 				8B7DE066210B672900EC4436 /* MYExt.Dictionary.swift */,
 				8B7DE067210B672900EC4436 /* MYExt.String.swift */,
@@ -179,6 +182,7 @@
 				8B7DE06D210B672900EC4436 /* MYLanguage.swift in Sources */,
 				8B7DE06A210B672900EC4436 /* MYExt.Date.swift in Sources */,
 				8B7DE06C210B672900EC4436 /* MYExt.String.swift in Sources */,
+				8B1BDF68214BE3EB0098E9EB /* MYExt.UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
