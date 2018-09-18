@@ -9,7 +9,7 @@ s.requires_arc = true
 s.swift_version = "4.2"
 
 # 2
-s.version = "1.0.1
+s.version = "1.0.4"
 
 # 3
 s.license = { :type => 'LcLib License #{s.version}', :text => <<-LICENSE
