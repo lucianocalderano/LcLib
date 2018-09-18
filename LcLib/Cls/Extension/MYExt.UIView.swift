@@ -34,7 +34,7 @@ public extension UIView {
         }
     }
 
-    func costraintTo (view: UIView, atb: NSLayoutAttribute, f: CGFloat) {
+    func costraintTo (view: UIView, atb: NSLayoutConstraint.Attribute, f: CGFloat) {
         view.translatesAutoresizingMaskIntoConstraints = false
         let dest = (atb == .height || atb == .width) ? nil : self
         self.addConstraint (NSLayoutConstraint(item: view,

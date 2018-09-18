@@ -6,10 +6,10 @@ s.ios.deployment_target = '11.0'
 s.name = "LcLib"
 s.summary = "LcLib - Utilità standard."
 s.requires_arc = true
-s.swift_version = "4.0"
+s.swift_version = "4.2"
 
 # 2
-s.version = "1.0.3"
+s.version = "1.0.1
 
 # 3
 s.license = { :type => 'LcLib License #{s.version}', :text => <<-LICENSE

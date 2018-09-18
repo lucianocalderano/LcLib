@@ -13,8 +13,8 @@ pod repo add LcLib https://github.com/lucianocalderano/LcLib.git
 
 ---
 
-git add . ; git commit -a -m "1.0.3"
-git tag 1.0.3
+git add . ; git commit -a -m "1.0.4"
+git tag 1.0.4
 git push --tags
 #git push -u origin master --tags
 
