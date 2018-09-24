@@ -10,7 +10,7 @@ import Foundation
 
 public extension Dictionary {
     func getVal(_ keys: String) -> Any? {
-        let array = keys.components(separatedBy: ".")
+        let array = keys.components(separatedBy: "->")
 
         var dic = self as Dictionary<Key, Value>
         for key in array.dropLast() {
