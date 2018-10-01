@@ -9,100 +9,67 @@
 import Foundation
 
 public extension Dictionary {
-    func getVal(_ keys: String) -> Any? {
+    private typealias LcDict = Dictionary<Key, Value>
+    func value<T>(_ keys: String) -> T? {
         let array = keys.components(separatedBy: "->")
-
-        var dic = self as Dictionary<Key, Value>
+        
+        var dic = self as LcDict
         for key in array.dropLast() {
             guard let next = dic[key as! Key] else {
                 return nil
             }
-            guard next is Dictionary<Key, Value> else {
+            guard next is LcDict else {
                 return nil
             }
             
-            dic = next as! Dictionary<Key, Value>
+            dic = next as! LcDict
         }
         
         guard let value = dic[array.last! as! Key] else {
             return nil
         }
-        
-        if value is String {
-            return value as! String
-        }
-        if value is Array<Any> {
-            return value as! Array<Any>
-        }
-        if value is Dictionary {
-            return value as! Dictionary
-        }
-        if value is Double {
-            return String (describing: value)
-        }
-        if value is Bool {
-            return String (describing: value)
-        }
-        return nil
+        return value as? T
     }
-
+    
     func double (_ key: String) -> Double {
-        guard let ret = self.getVal(key) as? String else {
-            return 0
-        }
-        if ret.count == 0 {
-            return 0
-        }
-        return Double(ret)!
+        return value(key) ?? 0
     }
-
+    
     func int (_ key: String) -> Int {
-        guard let ret = self.getVal(key) as? String else {
-            return 0
-        }
-        if ret.count == 0 {
-            return 0
-        }
-        return Int(ret)!
+        return value(key) ?? 0
     }
     
     func string (_ key: String) -> String {
-        guard let ret = self.getVal(key) as? String else {
-            return ""
-        }
-        return ret
+        return value(key) ?? ""
     }
     
     func dictionary(_ key: String) -> Dictionary<Key, Value> {
-        guard let ret = self.getVal(key) as? Dictionary<Key, Value> else {
-            return [:]
-        }
-        return ret
+        return value(key) ?? [:]
     }
     
     func array(_ key: String) -> Array<Any> {
-        guard let ret = self.getVal(key) as? Array<Any> else {
-            return []
-        }
-        return ret
+        return value(key) ?? []
     }
     
     func bool (_ key: String) -> Bool {
-        guard let ret = self.getVal(key) as? String else {
-            return false
+        guard let ret:String = value(key) else {
+            guard let boolRet:Bool = value(key) else {
+                return false
+            }
+            return boolRet
         }
-        return ret == "1"
+        return ret == "1" || ret.lowercased() == "true" || ret.lowercased().left(lenght: 1) == "y"
     }
     
-    func date (_ key: String, fmt: String) -> Date? {
-        guard let ret = self.getVal(key) as? String else {
-            return Date.init(timeIntervalSince1970: 0)
+    func date (_ key: String, fmt: String = "") -> Date? {
+        if fmt.isEmpty {
+            return value(key) ?? nil
         }
-        if ret.isEmpty {
-            return nil
+        
+        if let ret:String = value(key) {
+            return ret.isEmpty ? nil : ret.toDate(withFormat: fmt)
         }
-        let d = ret.toDate(withFormat: fmt)
-        return d
+        return nil
     }
 }
 
